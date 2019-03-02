@@ -72,13 +72,13 @@
   }
   #ouibounce-modal .modal-footer {
     position: absolute;
-    bottom: 40px;
+    bottom: 20px;
     text-align: center;
     width: 100%;
 
 
   }
-  #ouibounce-modal .modal-footer p {
+  #ouibounce-modal .modal-footer #claim {
     text-transform: capitalize;
     cursor: pointer;
     display: inline;

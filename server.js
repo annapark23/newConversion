@@ -1,3 +1,6 @@
+var clicks = 0; 
+
+
 //modal - will show when cursor passes the viewport..but only once since I did not include a close button. 
 
 var _ouibounce = ouibounce(document.getElementById('ouibounce-modal'), {
@@ -26,6 +29,13 @@ var _ouibounce = ouibounce(document.getElementById('ouibounce-modal'), {
         clock = new FlipClock($('.clock'), 3600, {
             clockFace: 'HourlyCounter',
             countdown: true
+        });
+
+        $(document).ready(function(){
+          $("#claim").click(function(){
+            clicks++;
+            console.log(clicks);
+          });
         });
     }
   });
